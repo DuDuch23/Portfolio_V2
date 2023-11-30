@@ -1,0 +1,161 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+h1{
+	margin-top: 1%;
+}
+
+.max-width{
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+}
+
+.navbar .logo{
+	width: 40px;
+	position: absolute;
+	top: 16px;
+	right: 40px;
+	cursor: pointer;
+}
+
+.navbar{
+	position: sticky;
+	background: #1B3168;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	padding: 25px;
+	display: flex;
+	justify-content: center;
+}
+
+.navbar .max-width{
+	display: flex;
+	justify-content: center;
+}
+
+.navbar .menu li a{
+	color: white;
+	margin-left: 20px;
+	font-size: 18px;
+	font-weight: 500;
+	transform: scaleX(0);
+}
+
+.navbar .menu li a:hover{
+	color: #B6A886;
+}
+
+.navbar .menu li{
+	list-style: none;
+	display: inline-block;
+}
+.ajout{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.form{
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+	width: 30%;
+}
+
+.form form{
+	width: 100%;
+}
+
+.ligne{
+	padding-bottom: 3%;
+}
+
+label{
+	font-size: 20px;
+	margin-bottom: 5%;
+	color: #1B3168;
+}
+
+.nom{
+	width: 130%;
+	height: 35px;
+	border-radius: 0.375rem;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.description{
+	width: 130%;
+	height: 100px;
+	border-radius: 0.375rem;
+}
+
+.lien{
+	width: 40%;
+	height: 35px;
+	border-radius: 0.375rem;
+}
+
+.submit button{
+	width: 20%;
+	height: 30px;
+	border-radius: 10px;
+	background: green;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	border-style: none;
+	cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  background: #EFEDED;
+  left: 30%;
+  top: 30%;
+  border: solid;
+  border-radius: 20px;
+}
+
+.modal h2{
+	text-align: center;
+	margin-top: 5%;
+}
+
+.modal p{
+	text-align: center;
+	margin-top: 10%;
+}
+
+.modal-buttons{
+	display: flex;
+	justify-content: center;
+	margin-top: 15%;
+
+}
+
+#cancelBtn{
+	width: 30%;
+	height: 50px;
+	border-radius: 10px;
+	border-style: none;
+	cursor: pointer;
+	border-radius: 10px;
+	background: #B6A886;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}

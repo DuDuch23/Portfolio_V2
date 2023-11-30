@@ -1,0 +1,213 @@
+body{
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #F5F5F5;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    min-height: 80vh;
+}
+
+.all{
+    display: flex;
+}
+
+#accueil{
+    background-color: #B6A886;
+}
+
+
+/* PARTIE MILIEUX DROITE OFFRES */
+
+.offres {
+    margin-top: 100px;
+    width: 63%;
+    position: relative;
+    left: 3%;
+}
+
+.contenant-offres{
+    height: 100%;
+    width: 100%;
+}
+
+.cse{
+    padding: 0 20px;
+    min-height: 140px;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    background-color: #D9D9D9;
+}
+
+.offres .contenant-offres .cse h4{
+    color: #1B3168;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.offres .contenant-offres .cse p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.offres .contenant-offres .cse span{
+    color: #1B3168;
+    text-decoration-line: underline;
+    text-underline-offset: 2px;
+}
+
+.offres .contenant-offres h5{
+    margin-top: 35px;
+    color: #1B3168;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.cases-offres{
+    margin-top: 25px;
+    padding: 0 20px;
+    min-height: 220px;
+    width: 100%;
+    background: #EFEDED;
+    display: grid;
+}
+
+.ligne{
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.rectangle-offre{
+    align-items: center;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    background: #1B3168;
+    color: white;
+    border-radius: 7px;
+}
+
+.cases-offres .ligne .rectangle-offre p{
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.date{
+    font-size: 17px ;
+    margin-left: 10px;
+}
+
+.texte-offre p{
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+.savoir-plus{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 0px 0 25px 0;
+}
+
+.savoir-plus a{
+    margin-right: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+}
+
+.savoir-plus a img{
+    margin-left: 5px;
+    width: 16px;
+}
+
+.decouvrir{
+    border-radius: 7px;
+    background: #1B3168;
+    display: flex;
+    height: 55px;
+    width: 290px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.decouvrir a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+/* //////////// FIN CONTENANT OFFRE ///////  */
+
+
+
+@media screen and (max-width:992px ) {
+    .offres {
+        margin-top: 100px;
+        width: 80%;
+        position: relative;
+        left: 12%;
+    }
+}
+
+@media screen and (max-width:600px ) {
+    .offres {
+        margin-top: 100px;
+        width: 90%;
+        position: relative;
+        left: 5%;
+    }
+
+    .cse {
+        padding: 0 20px;
+        min-height: 200px;
+        width: 100%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background-color: #D9D9D9;
+    }
+
+    .cases-offres {
+        margin-top: 25px;
+        padding: 20px 20px;
+        min-height: 250px;
+        width: 100%;
+        background: #EFEDED;
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .cse{
+        min-height: 250px;
+        padding: 20px 20px;
+    }
+    .cases-offres{
+        min-height: 300px;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width:320px ) {
+    .offres {
+        margin-top: 100px;
+        width: 95%;
+        position: relative;
+        left: 1%;
+    }
+}

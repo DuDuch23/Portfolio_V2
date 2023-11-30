@@ -1,0 +1,905 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lobster&family=Montserrat:wght@600&display=swap');
+
+/*
+sass --watch style.scss portfolio.css
+*/
+
+body{
+    width: 100%;
+    margin: 0;
+    background-color: #222;
+}
+
+#menu-hamburger{
+    display: none;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+#container-nav-bar{
+    font-family: "Montserrat";
+    position: fixed;
+    width: 80%;
+    height: 80px;
+    z-index: 100;
+    left: 10%;
+    top: 0;
+}
+
+#nav-bar{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+    box-shadow: 0 2px 20px 12px rgba(10,0,5,1);
+    z-index: 2;
+    position: relative;
+    left: 0%;
+    backdrop-filter: blur(50px);
+}
+
+#Accueil-nav-bar{
+    width: 20%;
+    height: 100%;
+    float: left;
+    display: inline;
+    text-align: center;
+
+ & a{
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+}
+
+#Projets-nav-bar{
+    width: 20%;
+    height: 100%;
+    float: left;
+    display: inline;
+    text-align: center;
+}
+
+#Projets-nav-bar a{
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#Timeline-nav-bar{
+    width: 20%;
+    height: 100%;
+    float: left;
+    display: inline;
+    text-align: center;
+}
+
+#Timeline-nav-bar a{
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#Parcours-nav-bar{
+    width: 20%;
+    height: 100%;
+    float: left;
+    display: inline;
+    text-align: center;
+}
+
+#Parcours-nav-bar a{
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#Contact-nav-bar{
+    width: 20%;
+    height: 100%;
+    float: left;
+    display: inline;
+    text-align: center;
+}
+
+#Contact-nav-bar a{
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+li a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+#gr{
+    --size: 700px;
+    --speed: 50s;
+    --easing: cubic-bezier(1, 0.8, 0.2, 0.8);
+    width: 80%;
+    height: 50%;
+    filter: blur(calc(var(--size) / 8));
+    background-image: linear-gradient(rgba(55, 235, 169, 0.851), #5b37eb);
+    animation: rotate var(--speed) var(--easing) alternate infinite;
+    border-radius: 100% 100% 100% 100%/100% 100% 100% 100%;
+    margin: auto;
+    z-index: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 25%;
+}
+
+@media (max-width: 1000px){
+    #gr{
+        --size: 500px
+    }
+}
+
+
+
+/*----------------------------------------------------------Accueil----------------------------------------------------------*/
+
+#bloc-accueil{
+    width: 100%;
+    height: 1000px;
+    min-height: 50vh;
+    position: relative;
+    font-family: "EB Garamond";
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#presentation{
+    width: 100%;
+    height: 80%;
+    margin-top: 5%;
+}
+
+#pdp{
+    display: flex;
+    justify-content: center;
+}
+
+#img-pdp{
+    border-radius: 50%;
+    border-style: inset;
+    border-color: blue;
+    transition: all 500ms ease-in-out; 
+    border-width: 5px;
+}
+
+#img-pdp:hover{
+    transition: all 500ms ease-in-out; 
+    transform: scale(1.05);
+    border-color: aquamarine;
+    box-shadow: 2px 4px 10px 2px;
+}
+
+#nom-prenom{
+    font-family: "Lobster", cursive;
+    font-size: 350%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+}
+
+.presentation-text{
+    display: flex;
+    justify-content: center;
+    font-size: 150%;
+    color: white;
+    text-align: center;
+}
+
+#CV{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+#bouton-CV{
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 25px;
+    font-family: "EB Garamond";
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+#bouton-CV a{
+    list-style-type: none;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+    color: black;
+}
+
+#bouton-CV:hover{
+    box-shadow: 2px 4px 10px 2px;
+    transition: all 200ms ease-in-out;
+    color: #5B37CE;
+    background-color: #37eba9d9;
+}
+
+/*----------------------------------------------------------Projets----------------------------------------------------------*/
+
+#bloc-projets{
+    display: flex;
+    justify-content: center;
+}
+
+.content_bloc_projets{
+    width: 90%;
+    position: relative;
+    margin: 40px 0 40px 0;
+    padding: 40px 20px 40px 20px;
+    overflow: hidden;
+}
+
+.titre{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    font-family: "EB Garamond";
+    font-size: 30px;
+    border: solid;
+    position: relative;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: -10px 6px 20px 10px;
+}
+
+.content_all_projet{
+    display: grid; 
+    grid-template-columns: repeat(2, minmax(0, 1fr)); 
+    margin: 5%;
+    gap: 20px;
+    position: relative;
+    left: 0;
+    transition: left 2s ease-in-out;
+}
+
+.content_projet{
+    display: flex;
+    justify-content: center;
+}
+
+.projet{
+    width: 400px;
+    padding: 15px;
+    border-radius: 8px;
+    background: linear-gradient(rgba(55, 235, 169, 0.851), #5b37eb);
+    box-shadow: inset 0px 0px 15px 5px;
+    transition: all 0.2s ease-in-out;
+    :hover{
+        border: 4px solid #fff;
+        border-radius: 12px;
+        box-shadow: 
+        0 0 8px #fff, 
+        inset 0 0 8px #fff,
+        0 0 16px #2EC, 
+        inset 0 0 16px #2EC,
+        0 0 32px #1237E9, 
+        inset 0 0 32px #1237E9,;
+        transition: all 0.1s ease-in-out;
+    }
+}
+
+.container_image_projet{
+    display: flex;
+    justify-content: center;
+}
+
+.image_projet{
+    width: 40%;
+    border-color: #0080FF;
+    border-radius: 100%;
+    box-shadow: 4px 4px 3px 2px;
+}
+
+.titre_projet{
+    color: black;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.affiche_fiche_projet{
+    display: flex;
+    justify-content: center;
+}
+
+.learn_more{
+    display: flex;
+    justify-content: center;
+}
+
+.button_learn_more{
+    width: 60%;
+    height: 35px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.image_info_projet img{
+    width: 100%;
+    border-top: solid;
+    border-bottom: solid;
+}
+
+.fiche_projet{
+    width: 100%;
+    height: 100%;
+    background-color: #22222280;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.previous_projet{
+
+}
+
+#form_previous_projet{
+
+}
+
+.fleche_gauche{
+    width: 60px;
+}
+
+.next_projet{
+
+}
+
+#form_next_projet{
+
+}
+
+.fleche_droite{
+    width: 60px;
+}
+
+.content_fiche_projet{
+    width: 40%;
+    background-color: white;
+}
+
+.top_fiche_projet{
+    background-color: rgb(50, 47, 47);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fullscreen_modal{
+    width: 10%;
+    height: 25px;
+    display: flex;
+    justify-content: end;
+}
+
+.button_fullscreen_modal{
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.button_fullscreen_modal:hover{
+    background-color: rgb(50, 47, 47);
+    transition: all 0.1s;
+}
+
+.close_modal{
+    width: 10%;
+    height: 25px;
+    display: flex;
+    justify-content: end;
+}
+
+.button_close_modal{
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.button_close_modal:hover{
+    background-color: red;
+    transition: all 0.1s;
+}
+
+.info_projet{
+    padding: 0 40px 40px 40px;
+}
+
+.description_texte{
+
+}
+
+.description_projet{
+
+}
+
+.content_technos{
+
+}
+
+.temps{
+
+}
+
+.lien_github{
+
+}
+
+.lien_github a img{
+    width: 10%;
+}
+
+.lien_site{
+    display: flex;
+    justify-content: center;
+}
+
+.lien_site a{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    background-color: #007bff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.lien_site a:hover{
+    color: #007bff;
+    background-color: white;
+    transition: ease-in-out 0.3s;
+}
+
+
+.container-projet{
+    display: flex;
+    justify-content: center;
+}
+
+.projet a{
+    display: contents;
+}
+
+/*----------------------------------------------------------Timeline----------------------------------------------------------*/
+
+#bloc-timeline{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#timeline{
+    width: 100%;
+    display: block;
+    margin-top: 5%;
+    position: relative;
+}
+
+.wrapper{
+    padding-left: 18px;
+    padding-right: 18px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trait{
+    border-left: 5px solid #2BC;
+    display: inline-block;
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+}
+
+.timeline-item{
+    height: 370px;
+    display: table;
+    margin-bottom: 100px;
+}
+
+.timeline-item:nth-child(2n) .timeline-item-content{
+    float: right;
+}
+
+.timeline-item-content{
+    width: 40%;
+    background: linear-gradient(45deg, #2BC, #2EC);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: inset 0px 0px 15px 5px;
+}
+
+.timeline-item:last-child{
+    margin: 0;
+}
+
+.timeline-item-titre{
+    font-family: "EB garamond";
+}
+
+.timeline-item-texte{
+    color: white;
+    font-family: "Montserrat"
+}
+
+.timeline-item-date{
+    width: 10%;
+    background-color: #2BC;
+    border-radius: 10px;
+    position: relative;
+    left: 45%;
+    top: 70px;
+}
+
+.date{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    color: black;
+    font-size: 160%;
+}
+
+.timeline-item-content-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.img-lang{
+    width: 150px;
+    border-radius: 30%;
+}
+
+.contents-para{
+    display: grid;
+    align-items: center;
+}
+
+.contents{
+    color: white;
+    font-family: 'Montserrat';
+}
+
+.para{
+    margin: 0;
+}
+
+/*----------------------------------------------------------Contact----------------------------------------------------------*/
+
+#section-contact{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+#contact{
+    padding: 25px;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 5%;
+    background: linear-gradient(45deg, #2BC, #3BC);
+    box-shadow: inset 0px 0px 15px 5px;}
+
+.item-contact{
+    width: 100%;
+    margin: 1% 2% 0 2%;
+    display: grid;
+    font-family: "Montserrat";
+    font-size: 20px;
+}
+
+.label{ 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.input{
+    width: 90%;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    border: 3px solid #1237E9;
+}
+
+.input:focus{
+    box-shadow: 2px 2px 15px 4px;
+}
+
+.erreur{
+    margin: 1rem 0rem 1rem 2rem;
+    color: red;
+    font-family: "Montserrat";
+}
+
+.message-erreur{
+    margin: 0;
+}
+
+#button-submit{
+    width: 100%;
+    display: flex;
+    font-family: "Montserrat";
+    font-size: 20px;
+    justify-content: center;
+    height: 50px;
+    margin-top: 40px;
+}
+
+#submit{
+    width: 35%;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: 'Montserrat';
+}
+
+#submit:hover{
+    box-shadow: 2px 2px 15px 4px;
+    cursor: pointer;
+}
+
+/*----------------------------------------------------------Foot----------------------------------------------------------*/
+
+#foot-page{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    margin-top: 10%;
+    position: relative;
+    box-shadow: 0px 0px 20px 20px;
+    /*position: relative;
+    z-index: 4;
+    opacity: 0.7;*/
+}
+
+@media screen and (max-width: 1400px){
+    .projet{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    li a{
+        font-size: 20px;
+    }
+
+    .projet{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    #container-menu-hamburger{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #container-nav-bar{
+        width: 85%;
+    }
+
+    #nav-bar{
+        display: none;
+    }
+
+    #menu-hamburger{
+        display: none;
+        width: 90%;
+        height: 70%;
+        background-color: #222;
+        position: fixed;
+        z-index: 100;
+    }
+
+    #Accueil-hamburger{
+        list-style-type: none;
+        text-align: center;
+        color: white;
+    }
+
+    #Accueil-hamburger a{
+        text-decoration: none;
+        color: white;
+    }
+
+    #Projets-hamburger{
+        list-style-type: none;
+        text-align: center;
+    }
+
+    #Projets-hamburger a{
+        text-decoration: none;
+        color: white;
+    }
+
+    #Timeline-hamburger{
+        list-style-type: none;
+        text-align: center;
+    }
+
+    #Timeline-hamburger a{
+        text-decoration: none;
+        color: white;
+    }
+
+    #Parcours-hamburger{
+        list-style-type: none;
+        text-align: center;
+    }
+
+    #Parcours-hamburger a{
+        text-decoration: none;
+        color: white;
+    }
+
+    #Contact-hamburger{
+        list-style-type: none;
+        text-align: center;
+    }
+
+    #Contact-hamburger a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .container-button-menu-hamburger{
+        width: 50%;
+        height: 35%;
+        display: grid;
+        justify-content: start;
+    }
+
+    .container-button-hamburger{
+        width: 50%;
+        height: 100%;
+        display: grid;
+        justify-content: start;
+    }
+
+    .button-hamburger{
+        display: grid;
+        cursor: grab;
+    }
+
+    .trait-menu-hamburger{
+        width: 10%;
+        margin: 8px 8px 8px 8px;
+        padding-right: 50px;
+        background-color: #0080FF;
+        border-radius: 5px;
+        box-shadow: -3px 5px 10px 0px;
+    }
+
+    .timeline-item-content{
+        float: left;
+    }
+
+    .timeline-item:nth-child(2n) .timeline-item-content{
+        float: left;
+    }
+
+    #timeline{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 900px){
+    #menu-hamburger{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #submit{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .titre-projet{
+        font-size: 10px;
+    }
+
+    #submit{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .titre{
+        font-size: 20px;
+    }
+
+    .projet{
+        width: 80%;
+    }
+}
+
+
+
+

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../Projet_2_Disney+/logo-disney.svg" alt="logo-disney+">
+        </div>
+        <nav>
+            <ul id="nav-disney">
+                <div class="logo-li">
+                    <img src="./images/home.png" alt="logo-maison">
+                    <li><a href="#">ACCUEIL</a></li>
+                </div>
+                <div class="logo-li">
+                    <img src="./images/search.png" alt="logo-recherche">
+                    <li><a href="#">RECHERCHE</a></li>
+                </div>
+                <div class="logo-li">
+                    <img src="./images/symbole-plus.png" alt="logo-liste">
+                    <li><a href="#">MA LISTE</a></li>
+                </div>
+                <div class="logo-li">
+                    <img src="./images/etoile.png" alt="logo-étoile">
+                    <li><a href="#">ORIGINALS</a></li>
+                </div>
+                <div class="logo-li">
+                    <img src="./images/cinema.png" alt="logo-films">
+                    <li><a href="#">FILMS</a></li>
+                </div>
+                <div class="logo-li">
+                    <img src="./images/television.png" alt="logo-séries">
+                    <li><a href="#">SERIES</a></li>
+                </div>
+            </ul>
+        </nav>
+        <div id="pdp-profil">
+            <img src="./images/badge.png" alt="pdp-profil">
+        </div>
+    </header>
+
+    <section id="carroussel">
+        <div id="content-carroussel">
+            <div class="pub" style="background-image: url(./diaporama/1.jpg);">
+                <img src="./diaporama/i1.png" alt="">
+            </div>
+            <div class="pub" style="background-image: url(./diaporama/2.jpg);">
+                <img src="./diaporama/i2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="marques">
+        <div class="container-marque">
+            <img src="./marques/1.png" alt="Disney">
+            <video autoPlay={true} loop={true} playsInline={true} muted={true}>
+                <source src="./videos/disney.mp4">
+            </video>
+        </div>
+        <div class="container-marque">
+            <img src="./marques/2.png" alt="Pixar">
+            <video autoPlay={true} loop={true} playsInline={true} muted={true}>
+                <source src="./videos/pixar.mp4">
+            </video>
+        </div>
+        <div class="container-marque">
+            <img src="./marques/3.png" alt="Marvel">
+            <video autoPlay={true} loop={true} playsInline={true} muted={true}>
+                <source src="./videos/marvel.mp4">
+            </video>
+        </div>
+        <div class="container-marque">
+            <img src="./marques/4.png" alt="Star Wars">
+            <video autoPlay={true} loop={true} playsInline={true} muted={true}>
+                <source src="./videos/star-wars.mp4">
+            </video>
+        </div>
+        <div class="container-marque">
+            <img src="./marques/5.png" alt="National Geographic">
+            <video autoPlay={true} loop={true} playsInline={true} muted={true}>
+                <source src="./videos/geographic.mp4">
+            </video>
+        </div>
+        <div class="container-marque">
+            <img src="./marques/6.png" alt="Star">
+            <video autoPlay={true} loop={true} playsInline={true} muted={true}>
+                <source src="./videos/star.mp4">
+            </video>
+        </div>
+    </section>
+
+    <section id="container">
+        <div id="nouveaute-slider">
+            <div id="titre-nouveaute">
+                <p class="titre-slider">Nouveau sur Disney+</p>
+            </div>
+            <div class="content-films-series-slider">
+                <div class="slider">
+                    <div class="slide-prev">
+                        <img src="./slider/fleche-gauche.png" alt="fleche gauche">
+                    </div>
+                    <div class="content-films-series">
+                        <div class="container-image">
+                            <img src="./ligne1/1.jpg" alt="Wanda Vision">
+                        </div>
+                        <div class="container-image">
+                            <img src="./ligne1/2.jpg" alt="Les Agents du S.H.I.E.L.D">
+                        </div>
+                        <div class="container-image">
+                            <img src="./ligne1/3.jpg" alt="BIA">
+                        </div>
+                        <div class="container-image">
+                            <img src="./ligne1/4.jpg" alt="Les Légendes">
+                        </div>
+                        <div class="container-image">
+                            <img src="./ligne1/5.jpg" alt="Black Panther">
+                        </div>
+                    </div>
+                    <div class="slide-next">
+                        <img src="./slider/fleche-droite.png" alt="fleche droite">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="immanquables-slider">
+            <div id="titre-star">
+                <p class="titre-slider">Star : les immanquables</p>
+            </div>
+            <div class="content-films-series-slider">
+                <div class="slider">
+                    <div class="slide-prev">
+                        <img src="./slider/fleche-gauche.png" alt="fleche gauche">
+                    </div>
+                    <div class="content-films-series">
+                        <div class="container-image">
+                            <img src="./ligne2/1.jpg" alt="Le Narcisse Noir">
+                        </div>
+                        <div class="container-image">
+                            <img src="./ligne2/2.jpg" alt="Les Enfants de Timpelbach">
+                        </div>
+                        <div class="container-image">
+                            <img src="./ligne2/3.jpg" alt="La Place">
+                        </div>
+                        <div class="container-image">
+                            <img src="./ligne2/4.jpg" alt="Papa ou Maman (la série)">
+                        </div>
+                        <div class="container-image">
+                            <img src="./ligne2/5.jpg" alt="Big Sky">
+                        </div>
+                    </div>
+                    <div class="slide-next">
+                        <img src="./slider/fleche-droite.png" alt="fleche droite">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="poursuivre-lecture-slider">
+            <div id="titre-poursuivre-lecture">
+                <p class="titre-slider">Poursuivre la lecture</p>
+            </div>
+            <div class="content-films-series-slider">
+                <div class="slider">
+                    <div class="slide-prev">
+                        <img src="./slider/fleche-gauche.png" alt="fleche gauche">
+                    </div>
+                    <div class="content-films-series">
+                        <div class="container-image">
+                            <img src="./ligne3/1.jpg" alt="Star Wars The Mandalorian">
+                            <div class="barre-progression">
+                                <div id="barre-progression-1-complete"></div>
+                            </div>
+                        </div>
+                        <div class="container-image">
+                            <img src="./ligne3/2.jpg" alt="Star Wars Le réveil de la Force">
+                            <div class="barre-progression">
+                                <div id="barre-progression-2-complete"></div>
+                            </div>
+                        </div>
+                        <div class="container-image">
+                            <img src="./ligne3/3.jpg" alt="Zootopie">
+                            <div class="barre-progression">
+                                <div id="barre-progression-3-complete"></div>
+                            </div>
+                        </div>
+                        <div class="container-image">
+                            <img src="./ligne3/4.jpg" alt="La Maison de Mickey">
+                            <div class="barre-progression">
+                                <div id="barre-progression-4-complete"></div>
+                            </div>
+                        </div>
+                        <div class="container-image">
+                            <img src="./ligne3/5.jpg" alt="Ratatouille">
+                            <div class="barre-progression">
+                                <div id="barre-progression-5-complete"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-next">
+                        <img src="./slider/fleche-droite.png" alt="fleche droite">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="content-footer">
+            <div id="content-logo">
+                <div class="logo">
+                    <img src="../Projet_2_Disney+/logo-disney.svg" alt="logo-disney+">
+                </div>
+            </div>
+            <div id="content-vie-privee-droit-pub">
+                <ul class="vie-privee-droit-pub">
+                    <li><a href="#">Règles de Respect de la Vie Privée</a></li>
+                    <li><a href="#">Modalités relatives aux cookies</a></li>
+                    <li><a href="#">Droits Données dans l'UE et au R-U</a></li>
+                    <li><a href="#">A propos de Disney+</a></li>
+                    <li><a href="#">Conditions générales d'abonnement</a></li>
+                    <li><a href="#">Aide</a></li>
+                    <li><a href="#">Appareils compatibles</a></li>
+                    <li><a href="#">À propos de Disney+</a></li>
+                </ul>
+                <ul class="vie-privee-droit-pub">
+                    <li><a href="#">Publicités ciblées par centre d'intérêt</a></li>
+                    <li><a href="#">Gérer vos préférences</a></li>
+                </ul>
+                <ul class="vie-privee-droit-pub">
+                    <li><a href="#">© Disney. Tous droits réservés.</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="slide.js"></script>
+</body>
+</html>

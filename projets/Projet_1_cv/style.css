@@ -1,0 +1,253 @@
+body{
+    width: 100%;
+    margin: 0;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+}
+
+/*------------------------------------------------------------------------------bloc 1------------------------------------------------------------------------------*/
+
+#content-logo-apple{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+#logo-apple{
+    width: 90px;
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
+
+nav{
+    width: 80%;
+    display: flex;
+    justify-content: end;
+}
+
+#menu-ul{
+    width: 45%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10%;
+}
+
+ul li{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+li a{
+    font-size: 30px;
+    color: #464646;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#trait{
+    display: flex;
+    text-decoration: solid;
+    height: 0;
+    align-items: center;
+}
+
+/*------------------------------------------------------------------------------bloc 2------------------------------------------------------------------------------*/
+
+#informations{
+    display: flex;
+    background-image: url(./image/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg);
+    background-size: cover;
+    padding: 10% 0 5% 0;
+}
+
+#content-informations{
+    width: 60%;
+    display: grid;
+    margin-left: 7%;
+}
+
+#nom-prenom{
+    font-size: 60px;
+}
+
+h1{
+    margin: 20px 0 20px 0;
+}
+
+h2{
+    margin: 0 0 40px 0;
+}
+
+#service{
+    font-size: 25px;
+}
+
+#mail-tel-loc img{
+    width: 55%;
+}
+
+.container-logo-mail-tel-loc{
+    width: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container-info{
+    width: 40%;
+    display: flex;
+    font-size: 25px;
+}
+
+.container-info p{
+    width: 100%;
+}
+
+#logo-mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content-pdp-profil{
+    width: 55%;
+}
+
+#pdp-profil{
+    display: flex;
+    justify-content: left;
+}
+
+#pdp-profil img{
+    width: 85%;
+}
+
+/*------------------------------------------------------------------------------bloc 3------------------------------------------------------------------------------*/
+
+#perso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+#container-a-propos{
+    display: flex;
+    width: 70%;
+    justify-content: right;
+}
+
+#perso img{
+    width: 85%;
+}
+
+#info-a-propos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+#text-a-propos{
+    font-size: 35px;
+}
+
+#description{
+    width: 70%;
+    font-size: 20px;
+}
+
+#content-languages{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0,1fr));
+}
+
+.languages{
+    display: flex;
+    font-size: 25px;
+}
+
+.languages p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-color: #59D7BF;
+    border-radius: 5px;
+    padding: 5% 10% 5% 10%;
+}
+
+#dl-cv{
+    width: 30%;
+    display: flex;
+    border-style: solid;
+    background-color: #59D7BF;
+    font-size: 25px;
+    color: white;
+    border-radius: 50px;
+    padding: 0% 2% 0% 4%;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+
+#dl-cv:hover{
+    transform: scale(1.05);
+    transition: all 400ms ease-in-out;
+    box-shadow: 3px 5px 10px 5px;
+}
+
+#logo-dl{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dl-cv img{
+    width: 60%;
+}
+
+@media screen and (max-width: 1750px) {
+    #content-languages{
+        grid-template-columns: repeat(4, minmax(0,1fr));
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    #menu-ul{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .languages{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    #mail-tel-loc img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+
+    #content-languages{
+        grid-template-columns: repeat(3, minmax(0,1fr));
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #menu-ul{
+        width: 80%;
+    }
+}

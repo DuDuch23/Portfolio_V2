@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lobster&family=Montserrat:wght@600&display=swap');
+
+body{
+    width: 100%;
+    margin: 0;
+    background-color: #222;
+}
+
+#menu-hamburger{
+    display: none;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+#container-nav-bar{
+    font-family: "Montserrat";
+    position: fixed;
+    width: 80%;
+    height: 80px;
+    z-index: 100;
+    left: 10%;
+    top: 0;
+}
+
+#nav-bar{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+    box-shadow: 0 2px 20px 12px rgba(10,0,5,1);
+    z-index: 2;
+    position: relative;
+    left: 0%;
+    backdrop-filter: blur(50px);
+}
+
+#Accueil-nav-bar{
+    width: 20%;
+    height: 100%;
+    float: left;
+    display: inline;
+    text-align: center;
+}
+
+#Accueil-nav-bar a{
+    height: 60%;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 15px 30px 15px 30px;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#Projets-nav-bar{
+    width: 20%;
+    height: 100%;
+    float: left;
+    display: inline;
+    text-align: center;
+}
+
+#Projets-nav-bar a{
+    height: 60%;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 15px 30px 15px 30px;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#Timeline-nav-bar{
+    width: 20%;
+    height: 100%;
+    float: left;
+    display: inline;
+    text-align: center;
+}
+
+#Timeline-nav-bar a{
+    height: 60%;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 15px 30px 15px 30px;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#Parcours-nav-bar{
+    width: 20%;
+    height: 100%;
+    float: left;
+    display: inline;
+    text-align: center;
+}
+
+#Parcours-nav-bar a{
+    height: 60%;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 15px 30px 15px 30px;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#Contact-nav-bar{
+    width: 20%;
+    height: 100%;
+    float: left;
+    display: inline;
+    text-align: center;
+}
+
+#Contact-nav-bar a{
+    height: 60%;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 15px 30px 15px 30px;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+li a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+#gr{
+    --size: 700px;
+    --speed: 50s;
+    --easing: cubic-bezier(1, 0.8, 0.2, 0.8);
+    width: 80%;
+    height: 50%;
+    filter: blur(calc(var(--size) / 8));
+    background-image: linear-gradient(rgba(55, 235, 169, 0.851), #5b37eb);
+    animation: rotate var(--speed) var(--easing) alternate infinite;
+    border-radius: 100% 100% 100% 100%/100% 100% 100% 100%;
+    margin: auto;
+    z-index: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 25%;
+}
+
+@media (max-width: 1000px){
+    #gr{
+        --size: 500px
+    }
+}

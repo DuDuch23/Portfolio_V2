@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@400;900&display=swap%27');
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@300;400;500;600;700;800;900 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+#content-body, body{
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+#container-menu-deroulant{
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    right: -60%;
+    z-index: 100;
+    transition: all 0.5s ease-out;
+    background: rgba(27, 49, 104, 0.8);
+}
+
+#menu-deroulant{
+    height: 100%;
+    width: 100%;
+    background: rgba(27, 49, 104, 0.8);
+    box-shadow: -5px 0px 10px 15px rgb(27 49 104 / 80%);
+}
+
+#container-button-hide{
+    display: flex;
+    justify-content: end;
+}
+
+#hide-menu-deroulant{
+    width: 60px;
+    height: 50px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hide-menu-deroulant img{
+    width: 35px;
+}
+
+#nav-hamburger{
+    width: 100%;
+    height: 65%;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    height: 111px;
+    background-color: #EFEDED;
+}
+
+#font-logo{
+    width: 244px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 9%;
+}
+
+.container-logo{
+    width: 244px;
+    height: 111px;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    align-items: center;
+}
+
+.img-lsv{
+    width: 80%;
+}
+
+.chevron-droit{
+    width: 14px;
+    height: 14px;
+    margin-right: 1%;
+}
+
+.chevron-gauche{
+    width: 14px;
+    height: 14px;
+    margin-right: 1%;
+}
+
+#info-accueil{
+    display: flex;
+    align-items: center;
+}
+
+#info-accueil p{
+    color: #B6A886;
+    font-family: "Montserrat";
+    font-size: 20px;
+}
+
+#home{
+    width: 10%;
+    height: 10%;
+    margin-right: 2%;
+}
+
+#acces-rapide{
+    color: #B6A886;
+    font-family: "Montserrat";
+    font-size: 20px;
+}
+
+#info-offre-billeterie-contacter p{
+    margin: 0;
+    font-family: "Montserrat";
+}
+
+#info-offre-billeterie{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#info-contacter{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#information-contact{
+    color: #B6A886;
+    font-family: "Montserrat";
+    font-size: 20px;
+}
+
+#info-tel-email-lieu p{
+    margin: 0;
+    font-family: "Montserrat";
+    font-size: 14px;
+}
+
+.content-chevron-droit{
+    display: flex;
+    justify-content: center;
+}
+
+#info-tel{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#tel{
+    text-decoration: none;
+    color: #1B3168;
+}
+
+#info-email{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#email{
+    text-decoration: none;
+    color: #1B3168;
+}
+
+#info-lieu{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#lieu{
+    text-decoration: none;
+    color: #1B3168    ;
+}
+
+#nos-partenaires{
+    color: #B6A886;
+    font-size: 20px;
+    font-family: "Montserrat";
+}
+
+#rectangle{
+    display: grid;
+    height: 230px;
+    background: rgba(27, 49, 104, 0.1);
+    justify-content: center;
+    align-items: center;
+}
+
+#content-img-rectangle{
+    height: 170px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+#slider-gauche{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-img-partenaire{
+    width: 80%;
+    transition: all 1s ease-in-out;
+}
+
+.rectangle-img{
+    width: 100%;
+    height: 100%;
+}
+
+#chevron-gauche-slider{
+    width: 90%;
+}
+
+#content-img-partenaire{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider-droit{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot{
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#chevron-droit-slider{
+    width: 90%;
+}
+
+#all-partenaire{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#all-partenaire p{
+    width: 215px;
+    font-family: "Montserrat";
+    font-size: 14px;
+}
+
+#all-partenaire p a{
+    color: black;
+}
+
+#font-bleu{
+    background-color: #1B3168;
+    height: 50%;
+    display: flex;
+    position: relative;
+    top: 50%;
+}
+
+nav{
+    display: flex;
+    position: relative;
+    margin-left: calc(9% + 244px);
+}
+
+li{
+    width: 130px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li:hover{
+    background-color: #B6A886;
+    cursor: pointer;
+    color: #1B3168;
+}
+
+#partenariats{
+    background-color: #B6A886;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Montserrat";
+}
+
+#element-footer{
+    position: relative;
+}
+
+footer{
+    padding: 20px;
+    background-color: #B6A886;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content-footer{
+    width: 90%;
+    display: flex;
+}
+
+#content-footer-img{
+    width: 244px;
+}
+
+#titre-cse-raccourcis{
+    display: grid;
+    margin-left: 4%;
+}
+
+#cse-lsv{
+    margin: 0;
+    font-family: "Montserrat";
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#img-footer{
+    margin-right: 3%;
+}
+
+#raccourcis{
+    height: 35%;
+    display: flex;
+}
+
+#raccourcis a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Montserrat";
+}
+
+.chevron-blanc{
+    display: grid;
+    margin-right: 5px;
+}
+
+.trait-blanc-incline30deg{
+    border: 0.7px solid white;
+    padding-right: 10px;
+    background-color: white;
+    transform: rotate(25deg);
+    margin-top: 3px;
+}
+
+.trait-blanc-incline-30deg{
+    border: 0.7px solid white;
+    padding-right: 10px;
+    background-color: white;
+    transform: rotate(-25deg);
+    margin-top: 3px;
+}
+
+.chevron-blanc-raccourcis{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.chevron-blanc-raccourcis:last-child{
+    margin: 0;
+}
+
+@media(max-width:840px){
+    nav{
+        display: none;
+    }
+
+    #font-logo{
+        margin: 0;
+    }
+
+    #font-bleu{
+        display: grid;
+        justify-content: end;
+    }
+
+    li{
+        width: 180px;
+        height: 75%;
+    }
+
+    li a{
+        color: white;
+        font-size: 20px;
+    }
+
+    #menu-hamburger{
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .trait{
+        margin: 5px;
+        padding-right: 50px;
+        background-color: #EFEDED;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #font-logo{
+        width: 200px;
+    }
+
+    #info-accueil p{
+        font-size: 15px;
+    }
+
+    #acces-rapide{
+        font-size: 15px;
+    }
+
+    #info-offre-billeterie-contacter p{
+        font-size: 10px;
+    }
+
+    #information-contact{
+        font-size: 15px;
+    }
+
+    #info-tel-email-lieu p{
+        font-size: 10px;
+    }
+
+    #nos-partenaires{
+        font-size: 15px;
+    }
+
+    .chevron-droit{
+        width: 10px;
+        height: 10px;
+    }
+
+    .container-logo{
+        width: 200px;
+    }
+
+    #rectangle{
+        height: 180px;
+    }
+
+    #all-partenaire p{
+        font-size: 12px;
+    }
+
+    #content-footer-img{
+        width: 220px;
+    }
+
+    #titre-cse-raccourcis{
+        margin-left: 0;
+    }
+
+    #cse-lsv{
+        font-size: 15px;
+    }
+    
+    #raccourcis p{
+        font-size: 10px;
+    }
+}
+
+@media screen  and (max-width: 550px) {
+    #content-footer{
+        width: 100%;
+    }
+}
+#container-page-partenaire{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70vh;
+}
+
+.page_partenaire{
+    width: 45%;
+    padding: 10px;
+    background-color: #EFEDED;
+    display: grid;
+    grid-template-columns: repeat(3, 170px);
+    justify-content: space-between;
+    margin-left: calc(9% + 244px);
+}
+
+.partenaire{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.nom_partenaire{
+    text-align: center;
+    border: solid;
+    border-radius: 7px;
+    background-color: #1B3168;
+    margin-bottom: 20px;
+}
+
+.nom_part{
+    margin: 5px;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    color: #B6A886;
+}
+
+.image_partenaire{
+    text-align: center;
+}
+
+.image_partenaire img{
+    width: 133px;
+    height: 133px;
+    /* padding-bottom: 90px; */
+}
+
+.texte_partenaire{
+    text-align: center;
+}
+
+.popup{
+    width: 400px;;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    border: solid;
+    z-index: 100;
+}
+
+.popup h5{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    color: #B6A886;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #1B3168;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+}
+
+.popup button a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 1200px){
+    .page_partenaire{
+        grid-template-columns: repeat(2, 170px);
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .page_partenaire{
+        grid-template-columns: repeat(1, 170px);
+    }
+}
