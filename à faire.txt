@@ -1,0 +1,8 @@
+problèmes : 
+- js avec la touche echap quand on est dans une modal projet
+
+objectifs :
+1- finaliser les modals projets
+2- finaliser le backoffice projet
+3- finaliser le backoffice accueil
+4- finaliser le php avec les projets
