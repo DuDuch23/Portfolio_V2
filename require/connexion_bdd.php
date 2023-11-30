@@ -1,6 +1,6 @@
 <!-- bdd saint vincent en ligne -->
 <?php
-
+/*
 $user = "116313_aduchemin";
 $pass = "Mushu4monchat?";
 $dbName = "lyceestvincent_aduchemin";
@@ -14,12 +14,12 @@ catch (PDOException $exception)
     echo 'Erreur lors de la connexion à la base de données : ' . $exception->getMessage();
     exit;
 }
-
+*/
 ?>
 <!-- bdd root -->
 
 <?php
-/*
+
 $user = "root";
 $pass = "";
 $dbName = "portfolio";
@@ -33,5 +33,5 @@ catch (PDOException $exception)
     echo 'Erreur lors de la connexion à la base de données : ' . $exception->getMessage();
     exit;
 }
-*/
+
 ?>
