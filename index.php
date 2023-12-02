@@ -125,10 +125,12 @@ if(empty($_POST) === false)
                             <div class="titre_projet">
                                 <h1><?php echo $projet['nom_projet']; ?></h1>
                             </div>
-                            <form class="affiche_fiche_projet" action="index.php" method="get">
-                                <input type="hidden" name="id_projet" value="<?= $projet['id_projet']; ?>">
-                                <button class="button_learn_more" onclick="showModalProjet()" >Fiche Projet (en travaux)</button>
-                            </form>
+                            <div class="content_form_affiche_fiche">
+                                <form class="affiche_fiche_projet" action="index.php" method="get">
+                                    <input type="hidden" name="id_projet" value="<?= $projet['id_projet']; ?>">
+                                    <button class="button_learn_more" onclick="showModalProjet()" >Fiche Projet (en travaux)</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                     <?php
@@ -145,10 +147,18 @@ if(empty($_POST) === false)
             $lastId->execute();
             $contentLastId = $lastId->fetch();
 
+            $allIdProjet = $con->prepare("SELECT id_projet FROM projet");
+            $allIdProjet->execute();
+            $contentAllIdProjet = $allIdProjet->fetchAll();
+
             if($idProjet <= 0 || $idProjet > $contentLastId['dernier_id_projet'])
             {
                 echo "<script>window.location.href = '/';</script>";
                 exit;
+            }
+            if(!in_array($idProjet, $contentAllIdProjet))
+            {
+                $e = "ok il est pas dans le tableau d'id";
             }
 
             $infoProjet = $con->prepare("SELECT * FROM projet WHERE id_projet = " . $idProjet);
@@ -357,9 +367,16 @@ la commande qui récupère chaque id des projets -->
             </form>
         </div>
     </div>
-
+    <div class="content-log">
+        <div class="logs" style="background-color: #fff; width: 40%; height: 30%;">
+            <p>
+                <?php
+                //var_dump($contentAllIdProjet)
+                ?>
+            </p>
+        </div>
+    </div>
     <div id="foot-page"></div>
-    <script src="script.js"></script>
-
+    <script src="./js/script.js"></script>
 </body>
 </html>

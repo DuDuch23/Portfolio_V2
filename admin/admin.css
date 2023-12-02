@@ -10,6 +10,22 @@ body{
     font-family: "Montserrat";
 }
 
+.return_portfolio{
+    width: 100%;
+    height: 150px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 101;
+}
+
+.return_portfolio a{
+    text-decoration: none;
+    color: #fff;
+}
+
 header{
     width: 20%;
     display: grid;
@@ -81,6 +97,10 @@ h1{
     border-top-right-radius: 6px;
     text-align: center;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.connexion{
+    padding: 0 0 25px 0;
 }
 
 .input{

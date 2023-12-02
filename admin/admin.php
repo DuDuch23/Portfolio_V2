@@ -52,7 +52,9 @@ if(isset($_POST['nom']) && isset($_POST['mdp']))
     <link rel="stylesheet" href="admin.css">
 </head>
 <body>
-    
+    <li class="return_portfolio">
+        <a href="../index.php">Portfolio</a>
+    </li>
     <div class="content_body">
         <div class="content_form">
             <div class="form">
@@ -105,14 +107,12 @@ if(isset($_POST['nom']) && isset($_POST['mdp']))
                         </div>
                     </div>
                     <?php
-                    var_dump($_SESSION);
+                    //var_dump($_SESSION);
                     ?>
                 </form>
-            <li><a href="../index.php">Portfolio</a></li>
             </div>
         </div>
     </div>
     <div id="gr"></div>
 </body>
 </html>
-
