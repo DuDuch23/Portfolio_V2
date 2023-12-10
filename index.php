@@ -78,26 +78,28 @@ if(empty($_POST) === false)
     require('./require/navbar.php');
     ?>
     <div id="bloc-accueil">
-        <div class="titre">
-            <h1 id="accueil">Accueil</h1>
-        </div>
-        <div id="presentation">
-            <div id="pdp">
-                <a href="./admin/admin.php"><img id="img-pdp" src="./image/photo-de-profil.jfif" alt="pdp"></a>
+        <div class="wrapper">
+            <div class="titre">
+                <h1 id="accueil">Accueil</h1>
             </div>
-            <div id="container-text">
-                <p class="presentation-text">Bienvenue</p>
-                <p class="presentation-text">Vous êtes sur le portfolio de : </p>
-                <p id="nom-prenom">Duchemin Alexandre</p>
-                <p class="presentation-text">Futur Développeur Full Stack Junior</p>
-                <p class="presentation-text">En BTS SIO (Services Informatiques aux Organisations) à Saint-Vincent de Senlis</p>
-            </div>
-            <div id="CV">
-                <?php
-                $cvLocal = "CV-Alexandre-Duchemin.pdf";
-                $cvEnLigne = "https://aduchemin.lyceestvincent.fr/CV-Alexandre-Duchemin.pdf";
-                ?>
-                <button id="bouton-CV"><a href="<?= $cvEnLigne ?>" target="_blank">Télécharger mon CV</a></button>
+            <div id="presentation">
+                <div id="pdp">
+                    <a href="./admin/admin.php"><img id="img-pdp" src="./image/photo-de-profil.jfif" alt="pdp"></a>
+                </div>
+                <div id="container-text">
+                    <p class="presentation-text">Bienvenue</p>
+                    <p class="presentation-text">Vous êtes sur le portfolio de : </p>
+                    <p id="nom-prenom">Duchemin Alexandre</p>
+                    <p class="presentation-text">Futur Développeur Full Stack Junior</p>
+                    <p class="presentation-text">En BTS SIO (Services Informatiques aux Organisations) à Saint-Vincent de Senlis</p>
+                </div>
+                <div id="CV">
+                    <?php
+                    $cvLocal = "CV-Alexandre-Duchemin.pdf";
+                    $cvEnLigne = "https://aduchemin.lyceestvincent.fr/CV-Alexandre-Duchemin.pdf";
+                    ?>
+                    <button id="bouton-CV"><a href="<?= $cvEnLigne ?>" target="_blank">Télécharger mon CV</a></button>
+                </div>
             </div>
         </div>
     </div>
@@ -262,7 +264,7 @@ la commande qui récupère chaque id des projets -->
             </div>
         </div>
     </div>
-                                                        <!--Contact-->
+    
     <div id="bloc-contact">
         <div class="wrapper">
             <div class="titre">
