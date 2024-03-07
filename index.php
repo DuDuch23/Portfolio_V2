@@ -71,6 +71,8 @@ if(empty($_POST) === false)
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
     <title>Portfolio</title>
     <link href="portfolio.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 
 <body>
@@ -78,26 +80,28 @@ if(empty($_POST) === false)
     require('./require/navbar.php');
     ?>
     <div id="bloc-accueil">
-        <div class="titre">
-            <h1 id="accueil">Accueil</h1>
-        </div>
-        <div id="presentation">
-            <div id="pdp">
-                <a href="./admin/admin.php"><img id="img-pdp" src="./image/photo-de-profil.jfif" alt="pdp"></a>
+        <div class="wrapper">
+            <div class="titre">
+                <h1 id="accueil">Accueil</h1>
             </div>
-            <div id="container-text">
-                <p class="presentation-text">Bienvenue</p>
-                <p class="presentation-text">Vous êtes sur le portfolio de : </p>
-                <p id="nom-prenom">Duchemin Alexandre</p>
-                <p class="presentation-text">Futur Développeur Full Stack Junior</p>
-                <p class="presentation-text">En BTS SIO (Services Informatiques aux Organisations) à Saint-Vincent de Senlis</p>
-            </div>
-            <div id="CV">
-                <?php
-                $cvLocal = "CV-Alexandre-Duchemin.pdf";
-                $cvEnLigne = "https://aduchemin.lyceestvincent.fr/CV-Alexandre-Duchemin.pdf";
-                ?>
-                <button id="bouton-CV"><a href="<?= $cvEnLigne ?>" target="_blank">Télécharger mon CV</a></button>
+            <div id="presentation">
+                <div id="pdp">
+                    <a href="./admin/admin.php"><img id="img-pdp" src="./image/photo-de-profil.jfif" alt="pdp"></a>
+                </div>
+                <div id="container-text">
+                    <p class="presentation-text">Bienvenue</p>
+                    <p class="presentation-text">Vous êtes sur le portfolio de : </p>
+                    <p id="nom-prenom">Duchemin Alexandre</p>
+                    <p class="presentation-text">Futur Développeur Full Stack Junior</p>
+                    <p class="presentation-text">En BTS SIO (Services Informatiques aux Organisations) à Saint-Vincent de Senlis</p>
+                </div>
+                <div id="CV">
+                    <?php
+                    $cvLocal = "CV-Alexandre-Duchemin.pdf";
+                    $cvEnLigne = "https://aduchemin.lyceestvincent.fr/CV-Alexandre-Duchemin.pdf";
+                    ?>
+                    <button id="bouton-CV"><a href="<?= $cvEnLigne ?>" target="_blank">Télécharger mon CV</a></button>
+                </div>
             </div>
         </div>
     </div>
@@ -108,34 +112,41 @@ if(empty($_POST) === false)
                 <h1>Mes Projets</h1>
             </div>
             <div class="content_all_projet">
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <?php
+                        $bddProjet = $con->prepare('SELECT * FROM projet');
+                        $bddProjet -> execute();
+                        $contentProjet = $bddProjet->fetchAll();
 
-                <?php
-                $bddProjet = $con->prepare('SELECT * FROM projet');
-                $bddProjet -> execute();
-                $contentProjet = $bddProjet->fetchAll();
-
-                foreach($contentProjet as $projet)
-                {
-                    ?>
-                    <div class="content_projet">
-                        <div class="projet">
-                            <div class="container_image_projet">
-                                <img class="image_projet" src="./image/<?php echo $projet['image_projet']; ?>" alt="<?php echo $projet['alt_img_projet']; ?>">
+                        foreach($contentProjet as $projet)
+                        {
+                            ?>
+                            <div class="swiper-slide">
+                                <div class="content_projet">
+                                    <div class="projet">
+                                        <div class="container_image_projet">
+                                            <img class="image_projet" src="./image/<?php echo $projet['image_projet']; ?>" alt="<?php echo $projet['alt_img_projet']; ?>">
+                                        </div>
+                                        <div class="titre_projet">
+                                            <h1><?php echo $projet['nom_projet']; ?></h1>
+                                        </div>
+                                        <div class="content_form_affiche_fiche">
+                                            <form class="affiche_fiche_projet" action="index.php" method="get">
+                                                <input type="hidden" name="id_projet" value="<?= $projet['id_projet']; ?>">
+                                                <button class="button_learn_more" onclick="showModalProjet()" >Fiche Projet (en travaux)</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="titre_projet">
-                                <h1><?php echo $projet['nom_projet']; ?></h1>
-                            </div>
-                            <div class="content_form_affiche_fiche">
-                                <form class="affiche_fiche_projet" action="index.php" method="get">
-                                    <input type="hidden" name="id_projet" value="<?= $projet['id_projet']; ?>">
-                                    <button class="button_learn_more" onclick="showModalProjet()" >Fiche Projet (en travaux)</button>
-                                </form>
-                            </div>
-                        </div>
+                            <?php
+                        }
+                        ?>
                     </div>
-                    <?php
-                }
-                ?>
+                </div>
+
+                
             </div>
         </div>
         <?php
@@ -262,7 +273,7 @@ la commande qui récupère chaque id des projets -->
             </div>
         </div>
     </div>
-                                                        <!--Contact-->
+    
     <div id="bloc-contact">
         <div class="wrapper">
             <div class="titre">
@@ -378,5 +389,13 @@ la commande qui récupère chaque id des projets -->
     </div>
     <div id="foot-page"></div>
     <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            slidesPerView: 3,
+            spaceBetween: 60,
+            freeMode: true,
+        });
+    </script>
 </body>
 </html>

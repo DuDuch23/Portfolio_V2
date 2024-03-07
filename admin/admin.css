@@ -123,6 +123,7 @@ input[type="text"]{
     padding: 15px;
     border: none;
     background: rgba(255, 255, 255, 0.9);
+    text-align: center;
 }
 
 input[type="password"]{
@@ -131,6 +132,7 @@ input[type="password"]{
     padding: 15px;
     border: none;
     background: rgba(255, 255, 255, 0.9);
+    text-align: center;
 }
 
 .submit{
