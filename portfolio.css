@@ -48,7 +48,7 @@ header {
   width: 100%;
   list-style-type: none;
   overflow: hidden;
-  box-shadow: 0 2px 20px 12px rgb(10, 0, 5);
+  box-shadow: -10px 10px 9px -6px;
   z-index: 2;
   position: relative;
   left: 0%;
@@ -304,15 +304,11 @@ li a:hover {
   padding-right: 18px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: -10px 6px 20px 10px;
+  box-shadow: -10px 10px 9px -6px;
 }
 
 .content_all_projet {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   margin: 5%;
-  column-gap: 5%;
-  row-gap: 10%;
   position: relative;
   left: 0;
   transition: left 2s ease-in-out;
