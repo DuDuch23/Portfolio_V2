@@ -325,7 +325,7 @@ li a:hover {
   background: linear-gradient(rgba(55, 235, 169, 0.851), #5b37eb);
   box-shadow: inset 0px 0px 15px 5px;
 }
-.projet:hover {
+.content_projet:hover {
   border: 2px solid #fff;
   box-shadow: 0 0 8px #fff, inset 0 0 8px #fff, 0 0 16px #2EC, inset 0 0 16px #2EC, 0 0 32px #1237E9, inset 0 0 32px #1237E9;
   transition: all 0.1s ease-in-out;

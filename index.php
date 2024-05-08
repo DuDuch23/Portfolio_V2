@@ -71,8 +71,7 @@ if(empty($_POST) === false)
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
     <title>Portfolio</title>
     <link href="portfolio.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 
 <body>

@@ -48,9 +48,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id_admin`, `nom_admin`, `mot_de_passe`) VALUES
-(1, 'Alexandre.D', '$argon2i$v=19$m=65536,t=4,p=1$d3QvNTNYT1NFeUZ6WUxqVg$vo5x5/bdH3eNP/M7g64wt59ptKbJuTLgAIBoI+J/2x0'),
-(2, 'Mathieu.C', '$argon2i$v=19$m=65536,t=4,p=1$by9rQTRSSS4uRHVQSm9Jbg$9aQ19IVXpePL9f+CudOeMkuga0cT4LbWC/Aqz8yiFl0'),
-(3, 'admin', '$argon2i$v=19$m=65536,t=4,p=1$QU1FanlqVi9jRE1OenRzcA$HUFkIlD435MPxmeY30Cn3HXhJtG/PbcCLcA0wvd64cQ');
+(1, 'Mathieu.C', '$argon2i$v=19$m=65536,t=4,p=1$by9rQTRSSS4uRHVQSm9Jbg$9aQ19IVXpePL9f+CudOeMkuga0cT4LbWC/Aqz8yiFl0'),
+(2, 'admin', '$argon2i$v=19$m=65536,t=4,p=1$QU1FanlqVi9jRE1OenRzcA$HUFkIlD435MPxmeY30Cn3HXhJtG/PbcCLcA0wvd64cQ');
 
 -- --------------------------------------------------------
 
